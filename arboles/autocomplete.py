@@ -32,7 +32,8 @@ def get_next(prefix):
 
     nexts = []
     for key in parent:
-        nexts.append(key)
+        if key != '.':
+            nexts.append(key)
     return nexts
 
 
